@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        @media (max-width: 75em) {
+    html {
+      font-size: 60%;
+    }
+  }
+  
+  @media (max-width: 61.25em) {
+    html {
+      font-size: 58%;
+    }
+  }
+  
+  @media (max-width: 28.75em) {
+    html {
+      font-size: 55%;
+    }
+  }
+
+#navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #C3093F;
+    box-shadow: 0 2px 0 rgb(0 0 0 / 40%);
+    z-index: 10;
+}
+
+.nav-link {
+    float: right;
+    padding: 10px 20px 30px 14px;
+    color: white;
+}
+
+a:hover{
+    color: rgb(255, 130, 130);
+}
+
+#Welcome{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #1A1A1D;
+    padding: 0 2rem;
+}
+
+#WelcomeH1{
+    font-size: 40px;
+    color: white;
+    margin-bottom:-10px;
+}
+
+#WelcomeH2{
+    color: rgb(255, 80, 80);
+}
+
+li{
+    list-style-type: none;
+}
+
+.projects-section {
+    text-align: center;
+    padding: 10rem 2rem;
+    background-color: #6F2232;
+}
+
+.title {
+    max-width: 640px;
+    margin: 0 auto 6rem auto;
+    border-bottom: 0.2rem solid white;
+    font-size: 60px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 600px));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
+.project {
+    background: #1A1A1D;
+    box-shadow: 1px 1px 2px rgb(0 0 0 / 50%);
+    border-radius: 2px;
+    border: 5px solid white;
+}
+.project-image {
+    height: calc(100% - 6.8rem);
+    width: 100%;
+    object-fit: cover;
+}
+.project-title {
+    font-size: 2rem;
+    padding: 2rem 0.5rem;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.code {
+    color: #1A1A1D;
+    transition: color 0.3s ease-out;
+}
+  
+.project:hover .code  {
+    color: white !important;
+}
+  
+a {
+    text-decoration: none;
+    color: white;
+}
+#Contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #1A1A1D;
+    padding: 0 2rem;
+
+}
+
+.contactH1{
+    color: white;
+    font-size: 80px;
+    margin-bottom: -10px;;
+}
+
+.contactH2{
+    color: white;
+    font-size: 30px;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 980px;
+    margin-top: 4rem;
+    flex-wrap: wrap;
+  }
+
+  .contact-details {
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 1px #1f1f1f;
+    transition: transform 0.3s ease-out;
+  }
+  
+  .contact-details:hover {
+    transform: translateY(8px);
+  }
+    
+    </style>
+    <link rel="stylesheet" href="PersonalPortfolio.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"/>
+<link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap" rel="stylesheet"/>
+    <nav id="navbar">
+        <ul>
+            <li>
+                <a class = "nav-link" href="#Welcome">Home</a>
+            </li>
+            <li>
+                <a class = "nav-link" href="#project">Projects</a>
+            </li>
+            <li>
+                <a class = "nav-link" href="#Contact">Contact Me</a>
+            </li>
+        </ul>
+    </nav>
+    <section id="Welcome">
+        <h1 id="WelcomeH1">Hey, I am Vishal Kumar Singh</h1>
+        <h2 id="WelcomeH2">I am a Web Devoloper and a Coder</h2>
+        <a class ="Resume" href="#">To Know More</a>
+    </section>
+    
+    <section id ="project" class="projects-section">
+        <h2 class="title">These are some of my projects</h2>
+        <div class="projects-grid">
+            <a href="https://codepen.io/Vishal409/full/GRmprRJ" target="_blank" class="project project-tile">
+              <img class="project-image" src="https://www.nme.com/wp-content/uploads/2021/06/Paul-Walker-in-The-Fast-Furious-2001-696x442.jpg" alt="project">
+              <p class="project-title">
+                <span class="code">&lt;</span>
+                Tribute Page
+                <span class="code">/&gt;</span>
+              </p>
+            </a>
+            <a href="https://codepen.io/Vishal409/full/BamEoRy" target="_blank" class="project project-tile">
+                <img class="project-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/BMW_G30_FL_IMG_5351.jpg/1920px-BMW_G30_FL_IMG_5351.jpg" alt="project">
+                <p class="project-title">
+                  <span class="code">&lt;</span>
+                  Product Landing Page
+                  <span class="code">/&gt;</span>
+                </p>
+              </a>
+              <a href="https://codepen.io/Vishal409/full/MWQJORp" target="_blank" class="project project-tile">
+                <img class="project-image" src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20220401124017/HTML-Tutorial.png" alt="project">
+                <p class="project-title">
+                  <span class="code">&lt;</span>
+                  Technical Documentation
+                  <span class="code">/&gt;</span>
+                </p>
+              </a>
+              <a href="https://codepen.io/Vishal409/pen/yLbeNaY" target="_blank" class="project project-tile">
+                <img class="project-image" src="https://blog.vantagecircle.com/content/images/2021/07/employee-engagement-survey-resized--1-.png" alt="project">
+                <p class="project-title">
+                  <span class="code">&lt;</span>
+                  Survey Form
+                  <span class="code">/&gt;</span>
+                </p>
+              </a>
+        </div>
+    </section> 
+    <section id ="Contact">
+        <h1 class="contactH1">Wanna work together??</h1>
+        <h2 class="contactH2">Reach me at</h2>
+        <div class="links"> <a
+          href="https://www.facebook.com/vishalkrsinghanupama/"
+          target="_blank"
+          class="btn contact-details"
+          ><i class="fab fa-facebook-square"></i> Facebook</a>
+        <a
+          id="profile-link"
+          href="https://github.com/Vishal409"
+          target="_blank"
+          class="btn contact-details"
+          ><i class="fab fa-github"></i> GitHub</a>
+      </div>
+    </section>       
+</body>
+</html>
